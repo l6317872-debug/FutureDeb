@@ -100,7 +100,7 @@ nav a:hover {
     overflow: hidden;
 }
 
-/* Triangle Pattern Background */
+/* Triangle Pattern Background - Green subtle */
 .hero::before {
     content: '';
     position: absolute;
@@ -109,14 +109,14 @@ nav a:hover {
     top: 0;
     left: 0;
     background-image: 
-        linear-gradient(135deg, #0a3d1f 25%, transparent 25%),
-        linear-gradient(225deg, #0a3d1f 25%, transparent 25%),
-        linear-gradient(315deg, #0a3d1f 25%, transparent 25%),
-        linear-gradient(45deg, #0a3d1f 25%, transparent 25%);
+        linear-gradient(135deg, rgba(10, 70, 32, 0.3) 25%, transparent 25%),
+        linear-gradient(225deg, rgba(10, 70, 32, 0.3) 25%, transparent 25%),
+        linear-gradient(315deg, rgba(10, 70, 32, 0.3) 25%, transparent 25%),
+        linear-gradient(45deg, rgba(10, 70, 32, 0.3) 25%, transparent 25%);
     background-position: 80px 0, 80px 0, 0 0, 0 0;
     background-size: 160px 160px;
     background-repeat: repeat;
-    opacity: 0.15;
+    opacity: 0.35;
     pointer-events: none;
 }
 
@@ -307,26 +307,6 @@ nav a:hover {
     background: linear-gradient(180deg, #f8f9f1 0%, #e8f0e0 100%);
 }
 
-.vision::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-image: 
-        linear-gradient(135deg, #0a4620 25%, transparent 25%),
-        linear-gradient(225deg, #0a4620 25%, transparent 25%),
-        linear-gradient(315deg, #0a4620 25%, transparent 25%),
-        linear-gradient(45deg, #0a4620 25%, transparent 25%);
-    background-position: 100px 0, 100px 0, 0 0, 0 0;
-    background-size: 200px 200px;
-    background-repeat: repeat;
-    opacity: 0.08;
-    pointer-events: none;
-    z-index: 0;
-}
-
 .stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -370,26 +350,6 @@ nav a:hover {
     position: relative;
 }
 
-.policy-section::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-image: 
-        linear-gradient(120deg, #0a3d1f 25%, transparent 25%),
-        linear-gradient(240deg, #0a3d1f 25%, transparent 25%),
-        linear-gradient(120deg, #0a3d1f 25%, transparent 25%),
-        linear-gradient(240deg, #0a3d1f 25%, transparent 25%);
-    background-position: 0 0, 60px 0, 30px 30px, 90px 30px;
-    background-size: 120px 60px;
-    background-repeat: repeat;
-    opacity: 0.05;
-    pointer-events: none;
-    z-index: 0;
-}
-
 .policy-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -416,13 +376,13 @@ nav a:hover {
     position: absolute;
     top: 0;
     right: 0;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background-image: 
-        linear-gradient(135deg, rgba(10, 70, 32, 0.2) 25%, transparent 25%),
-        linear-gradient(225deg, rgba(10, 70, 32, 0.2) 25%, transparent 25%);
-    background-position: 0 0, 25px 25px;
-    background-size: 50px 50px;
+        linear-gradient(135deg, rgba(13, 92, 43, 0.25) 25%, transparent 25%),
+        linear-gradient(225deg, rgba(13, 92, 43, 0.25) 25%, transparent 25%);
+    background-position: 0 0, 20px 20px;
+    background-size: 40px 40px;
     background-repeat: repeat;
     pointer-events: none;
 }
@@ -441,8 +401,8 @@ nav a:hover {
 
 .policy-card.highlight::before {
     background-image: 
-        linear-gradient(135deg, rgba(242, 213, 31, 0.15) 25%, transparent 25%),
-        linear-gradient(225deg, rgba(242, 213, 31, 0.15) 25%, transparent 25%);
+        linear-gradient(135deg, rgba(242, 213, 31, 0.3) 25%, transparent 25%),
+        linear-gradient(225deg, rgba(242, 213, 31, 0.3) 25%, transparent 25%);
 }
 
 .policy-card .number {
@@ -521,14 +481,14 @@ nav a:hover {
     top: 0;
     left: 0;
     background-image: 
-        linear-gradient(60deg, #0a3d1f 25%, transparent 25%),
-        linear-gradient(120deg, #0a3d1f 25%, transparent 25%),
-        linear-gradient(60deg, #0a3d1f 25%, transparent 25%),
-        linear-gradient(120deg, #0a3d1f 25%, transparent 25%);
+        linear-gradient(60deg, rgba(13, 92, 43, 0.2) 25%, transparent 25%),
+        linear-gradient(120deg, rgba(13, 92, 43, 0.2) 25%, transparent 25%),
+        linear-gradient(60deg, rgba(13, 92, 43, 0.2) 25%, transparent 25%),
+        linear-gradient(120deg, rgba(13, 92, 43, 0.2) 25%, transparent 25%);
     background-position: 0 0, 40px 0, 20px 20px, 60px 20px;
     background-size: 80px 40px;
     background-repeat: repeat;
-    opacity: 0.1;
+    opacity: 0.4;
     pointer-events: none;
 }
 
@@ -571,27 +531,6 @@ nav a:hover {
 
 .team-section {
     background: linear-gradient(180deg, #f8f9f1 0%, #e8f0e0 100%);
-    position: relative;
-}
-
-.team-section::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-image: 
-        linear-gradient(30deg, #0a4620 25%, transparent 25%),
-        linear-gradient(150deg, #0a4620 25%, transparent 25%),
-        linear-gradient(30deg, #0a4620 25%, transparent 25%),
-        linear-gradient(150deg, #0a4620 25%, transparent 25%);
-    background-position: 0 0, 80px 40px, 40px 20px, 120px 60px;
-    background-size: 160px 80px;
-    background-repeat: repeat;
-    opacity: 0.06;
-    pointer-events: none;
-    z-index: 0;
 }
 
 .team-grid {
@@ -634,10 +573,10 @@ nav a:hover {
     width: 100%;
     height: 100%;
     background-image: 
-        linear-gradient(45deg, rgba(10, 70, 32, 0.15) 25%, transparent 25%),
-        linear-gradient(-45deg, rgba(10, 70, 32, 0.15) 25%, transparent 25%);
+        linear-gradient(45deg, rgba(13, 92, 43, 0.2) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(13, 92, 43, 0.2) 25%, transparent 25%);
     background-position: 0 0;
-    background-size: 60px 60px;
+    background-size: 50px 50px;
     background-repeat: repeat;
     pointer-events: none;
 }
@@ -673,14 +612,14 @@ nav a:hover {
     top: 0;
     left: 0;
     background-image: 
-        linear-gradient(60deg, #0a3d1f 25%, transparent 25%),
-        linear-gradient(120deg, #0a3d1f 25%, transparent 25%),
-        linear-gradient(60deg, #0a3d1f 25%, transparent 25%),
-        linear-gradient(120deg, #0a3d1f 25%, transparent 25%);
+        linear-gradient(60deg, rgba(13, 92, 43, 0.3) 25%, transparent 25%),
+        linear-gradient(120deg, rgba(13, 92, 43, 0.3) 25%, transparent 25%),
+        linear-gradient(60deg, rgba(13, 92, 43, 0.3) 25%, transparent 25%),
+        linear-gradient(120deg, rgba(13, 92, 43, 0.3) 25%, transparent 25%);
     background-position: 0 0, 40px 0, 20px 20px, 60px 20px;
     background-size: 80px 40px;
     background-repeat: repeat;
-    opacity: 0.12;
+    opacity: 0.3;
     pointer-events: none;
 }
 
@@ -734,27 +673,6 @@ nav a:hover {
 
 .contact {
     background: white;
-    position: relative;
-}
-
-.contact::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-image: 
-        linear-gradient(75deg, #0a4620 25%, transparent 25%),
-        linear-gradient(165deg, #0a4620 25%, transparent 25%),
-        linear-gradient(75deg, #0a4620 25%, transparent 25%),
-        linear-gradient(165deg, #0a4620 25%, transparent 25%);
-    background-position: 0 0, 50px 25px, 25px 25px, 75px 50px;
-    background-size: 100px 50px;
-    background-repeat: repeat;
-    opacity: 0.04;
-    pointer-events: none;
-    z-index: 0;
 }
 
 .contact-grid {
@@ -813,32 +731,12 @@ footer {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-footer::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-image: 
-        linear-gradient(120deg, #0a3d1f 25%, transparent 25%),
-        linear-gradient(240deg, #0a3d1f 25%, transparent 25%);
-    background-position: 0 0, 30px 15px;
-    background-size: 60px 30px;
-    background-repeat: repeat;
-    opacity: 0.15;
-    pointer-events: none;
 }
 
 .footer-logo {
     display: flex;
     align-items: center;
     gap: 12px;
-    position: relative;
-    z-index: 1;
 }
 
 .footer-logo span {
@@ -850,8 +748,6 @@ footer::before {
 footer p {
     color: #aabcae;
     font-size: 12px;
-    position: relative;
-    z-index: 1;
 }
 
 
